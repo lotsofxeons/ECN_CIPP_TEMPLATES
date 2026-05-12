@@ -1,0 +1,8 @@
+{
+  "displayName": "All Company Users (D)",
+  "description": "Dynamic group containing all licensed, enabled, non-guest member users.",
+  "username": "AllCompanyUsersD",
+  "groupType": "DynamicMembership",
+  "membershipRules": "(user.accountEnabled -eq true) and (user.userType -eq \"Member\") and (user.assignedPlans -any (assignedPlan.capabilityStatus -eq \"Enabled\"))",
+  "allowExternal": false
+}
